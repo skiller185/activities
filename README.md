@@ -1,2 +1,10 @@
-# activities
-/*Take a list of activites on a .txt file, and randomly output an activity. The user will be asked if they like the activity that was output. They have the option to enter yes or no. If they enter yes, the program finishes. If they enter no, then the program will loop, delete the entry that was not sufficient to the user, and randomly chose another activity.*/
+# Activities
+`ActivitySuggestion.java` will do the following:
+
+1. Take a file with a file name denoted in the first argument containing one activity per line
+2. Read each line into a String
+3. Select a Random String
+4. Print that String to the console
+5. Prompt the user if they like the String (y/n)
+6. Terminate if they do (y)
+7. Repeat Steps 3-7 if they don't (n)
