@@ -19,11 +19,11 @@ public class ActivitySuggestion
 		{
 			if(activiesSize - 1 <= i)
 			{
-				
+				activities.add(fileRead.nextLine());
 			}
 			else
 			{
-				activities.set(i, );
+				activities.set(i, fileRead.nextLine());
 			}
 		}
 	}
