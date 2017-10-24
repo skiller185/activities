@@ -1,5 +1,5 @@
 # Activities
-`ActivitySuggestion.java` will do the following:
+`ActivitySuggestion.class` will do the following:
 
 1. Take a file with a file name denoted in the first argument containing one activity per line
 2. Read each line into a String
