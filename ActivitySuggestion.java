@@ -36,7 +36,7 @@ public class ActivitySuggestion
 				String decision = input.nextLine();
 				if(decision == "")
 				{
-					System.out.println("Hello? You have to say something... I'm not a mind reader."\n);
+					System.out.println("Hello? You have to say something... I'm not a mind reader.\n");
 				}
 				else
 				{
