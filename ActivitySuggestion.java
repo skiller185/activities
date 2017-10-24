@@ -30,7 +30,7 @@ public class ActivitySuggestion
 			remainingActivities = activities.size();
 			int choice = rand.nextInt(remainingActivities);
 			boolean responseInvalid = true;
-			char response = '\0';
+			char response = 0;
 			while(responseInvalid)
 			{
 				System.out.println("Would you like to " + activities.get(choice) + " (y/n)?");
