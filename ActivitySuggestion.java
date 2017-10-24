@@ -5,7 +5,7 @@ import java.util.Scanner;
 
 public class ActivitySuggestion
 {
-	public static void main(String[] args)
+	public static void main(String[] args) throws FileNotFoundException
 	{
 		//input Scanner calls from console
 		//fileRead Scanner calls from the File set by the first argument
@@ -34,20 +34,27 @@ public class ActivitySuggestion
 			{
 				System.out.println("Would you like to " + activities.get(choice) + " (y/n)?");
 				String decision = input.nextLine();
-				response = decision.charAt(0);
-				if(response == 'y')
+				if(decision == "")
 				{
-					responseInvalid = false;
-					rejected = false;
-				}
-				else if(response == 'n')
-				{
-					responseInvalid = false;
+					System.out.println("Hello? You have to say something... I'm not a mind reader."\n);
 				}
 				else
 				{
-					System.out.println("I'm sorry. I don't understand what you meant by that. Could you say that differently?");
-					System.out.println("(Respond with the letter y or n.)");
+					response = decision.charAt(0);
+					if(response == 'y')
+					{
+						responseInvalid = false;
+						rejected = false;
+					}
+					else if(response == 'n')
+					{
+						responseInvalid = false;
+					}
+					else
+					{
+						System.out.println("I'm sorry. I don't understand what you meant by that. Could you say that differently?");
+						System.out.println("(Respond with the letter y or n.)");
+					}
 				}
 			}
 			if(response == 'n')
